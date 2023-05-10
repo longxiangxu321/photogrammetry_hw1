@@ -120,16 +120,20 @@ bool Calibration::calibration(
     Vector4D vv1(r1[0], r1[1], r1[2], t.x());
     Vector4D vv2(r2[0], r2[1], r2[2], t.y());
     Vector4D vv3(r3[0], r3[1], r3[2], t.z());
+
+
     transform.set_row(0, vv1);
     transform.set_row(1, vv2);
     transform.set_row(2, vv3);
 
-    auto result1 = mult(transform, points_3d[5].homogeneous());
-    auto result2 = mult(K, result1);
-    auto result3 = result2/result2[2];
-    std::cout<<"rho "<<rho<<std::endl;
+    auto M = mult(K, transform);
+
+
+    auto result = mult(M, points_3d[5].homogeneous());
+    auto result1 = result/result[2];
+
     std::cout<<"input 3D "<<points_3d[5]<<std::endl;
-    std::cout<<"result "<<result3<<std::endl;
+    std::cout<<"result "<<result1<<std::endl;
 
 
 
