@@ -1,0 +1,2 @@
+"F:\CLion 2022.2.1\bin\mingw\bin\ar.exe" qc ..\..\lib\libeasy3d_fileio.a CMakeFiles/easy3d_fileio.dir/point_cloud_io.cpp.obj CMakeFiles/easy3d_fileio.dir/image_io.cpp.obj CMakeFiles/easy3d_fileio.dir/surface_mesh_io.cpp.obj CMakeFiles/easy3d_fileio.dir/surface_mesh_io_obj.cpp.obj CMakeFiles/easy3d_fileio.dir/resources.cpp.obj
+"F:\CLion 2022.2.1\bin\mingw\bin\ranlib.exe" ..\..\lib\libeasy3d_fileio.a

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="easy3d_core"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\3rd_party\;CMake Files\3rd_party\glew\;CMake Files\3rd_party\glog\;CMake Files\3rd_party\glfw\;CMake Files\3rd_party\glfw\src\;CMake Files\Calibration\;CMake Files\easy3d\;CMake Files\easy3d\core\;CMake Files\easy3d\fileio\;CMake Files\easy3d\util\;CMake Files\easy3d\viewer\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/core"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/core/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/core/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="easy3d_core">
+				<Option output="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/lib/libeasy3d_core.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/core"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glog/.."/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/core/Makefile&quot;  VERBOSE=1 easy3d_core"/>
+					<CompileFile command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/core/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="easy3d_core/fast">
+				<Option output="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/lib/libeasy3d_core.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/core"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glog/.."/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/core/Makefile&quot;  VERBOSE=1 easy3d_core/fast"/>
+					<CompileFile command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/core/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/box.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/constant.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/eigen_solver.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/graph.cpp">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/graph.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/kdtree.cpp">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/kdtree.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/line.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/manifold_builder.cpp">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/manifold_builder.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/mat.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/oriented_line.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/plane.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/point_cloud.cpp">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/point_cloud.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/polygon.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/principal_axes.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/properties.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/quat.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/random.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/rect.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/segment.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/signal.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/surface_mesh.cpp">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/surface_mesh.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/types.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/vec.h">
+			<Option target="easy3d_core"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rd_party\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glew/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rd_party\glew\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glog/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rd_party\glog\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rd_party\glfw\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rd_party\glfw\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\3rd_party\glfw\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\3rd_party\glfw\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\3rd_party\glfw\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/Calibration/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Calibration\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\easy3d\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\easy3d\core\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/fileio/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\easy3d\fileio\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/util/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\easy3d\util\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\easy3d\viewer\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

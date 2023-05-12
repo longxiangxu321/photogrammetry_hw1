@@ -1,0 +1,2 @@
+"F:\CLion 2022.2.1\bin\mingw\bin\ar.exe" qc ..\..\lib\libeasy3d_core.a CMakeFiles/easy3d_core.dir/graph.cpp.obj CMakeFiles/easy3d_core.dir/kdtree.cpp.obj CMakeFiles/easy3d_core.dir/point_cloud.cpp.obj CMakeFiles/easy3d_core.dir/surface_mesh.cpp.obj CMakeFiles/easy3d_core.dir/manifold_builder.cpp.obj
+"F:\CLion 2022.2.1\bin\mingw\bin\ranlib.exe" ..\..\lib\libeasy3d_core.a

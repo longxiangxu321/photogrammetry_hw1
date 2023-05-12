@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="GLFW"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\3rd_party\;CMake Files\3rd_party\glew\;CMake Files\3rd_party\glog\;CMake Files\3rd_party\glfw\;CMake Files\3rd_party\glfw\src\;CMake Files\Calibration\;CMake Files\easy3d\;CMake Files\easy3d\core\;CMake Files\easy3d\fileio\;CMake Files\easy3d\util\;CMake Files\easy3d\viewer\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3rd_glfw">
+				<Option output="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/lib/lib3rd_glfw.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-D_UNICODE"/>
+					<Add option="-DUNICODE"/>
+					<Add option="-DWINVER=0x0501"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/include"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/src"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/src/Makefile&quot;  VERBOSE=1 3rd_glfw"/>
+					<CompileFile command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3rd_glfw/fast">
+				<Option output="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/lib/lib3rd_glfw.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-D_UNICODE"/>
+					<Add option="-DUNICODE"/>
+					<Add option="-DWINVER=0x0501"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/include"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/src"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/src/Makefile&quot;  VERBOSE=1 3rd_glfw/fast"/>
+					<CompileFile command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/include/GLFW/glfw3.h">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/include/GLFW/glfw3native.h">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/context.c">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/egl_context.c">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/egl_context.h">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/init.c">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/input.c">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/internal.h">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/mappings.h">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/monitor.c">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/osmesa_context.c">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/osmesa_context.h">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/vulkan.c">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/wgl_context.c">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/wgl_context.h">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/win32_init.c">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/win32_joystick.c">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/win32_joystick.h">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/win32_monitor.c">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/win32_platform.h">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/win32_thread.c">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/win32_time.c">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/win32_window.c">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/window.c">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/3rd_party/glfw/src/glfw_config.h">
+			<Option target="3rd_glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rd_party\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glew/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rd_party\glew\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glog/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rd_party\glog\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rd_party\glfw\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rd_party\glfw\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\3rd_party\glfw\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\3rd_party\glfw\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\3rd_party\glfw\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/Calibration/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Calibration\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\easy3d\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\easy3d\core\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/fileio/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\easy3d\fileio\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/util/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\easy3d\util\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\easy3d\viewer\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

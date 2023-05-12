@@ -1,0 +1,2 @@
+"F:\CLion 2022.2.1\bin\mingw\bin\ar.exe" qc ..\..\lib\lib3rd_glog.a CMakeFiles/3rd_glog.dir/logging.cc.obj
+"F:\CLion 2022.2.1\bin\mingw\bin\ranlib.exe" ..\..\lib\lib3rd_glog.a

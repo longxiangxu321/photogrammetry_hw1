@@ -1,0 +1,2 @@
+"F:\CLion 2022.2.1\bin\mingw\bin\ar.exe" qc ..\..\lib\lib3rd_glew.a CMakeFiles/3rd_glew.dir/src/glew.c.obj
+"F:\CLion 2022.2.1\bin\mingw\bin\ranlib.exe" ..\..\lib\lib3rd_glew.a

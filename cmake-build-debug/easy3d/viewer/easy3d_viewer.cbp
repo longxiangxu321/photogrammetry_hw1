@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="easy3d_viewer"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\3rd_party\;CMake Files\3rd_party\glew\;CMake Files\3rd_party\glog\;CMake Files\3rd_party\glfw\;CMake Files\3rd_party\glfw\src\;CMake Files\Calibration\;CMake Files\easy3d\;CMake Files\easy3d\core\;CMake Files\easy3d\fileio\;CMake Files\easy3d\util\;CMake Files\easy3d\viewer\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/viewer"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/viewer/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/viewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/viewer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="easy3d_viewer">
+				<Option output="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/lib/libeasy3d_viewer.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/viewer"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glew/include"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/include"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glog/.."/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/viewer/Makefile&quot;  VERBOSE=1 easy3d_viewer"/>
+					<CompileFile command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/viewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/viewer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="easy3d_viewer/fast">
+				<Option output="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/lib/libeasy3d_viewer.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/viewer"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glew/include"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/include"/>
+					<Add directory="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glog/.."/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="F:/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/viewer/Makefile&quot;  VERBOSE=1 easy3d_viewer/fast"/>
+					<CompileFile command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/viewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug/easy3d/viewer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/camera.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/camera.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/clipping_plane.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/clipping_plane.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/constraint.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/constraint.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/drawable.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/drawable.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/drawable_lines.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/drawable_lines.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/drawable_points.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/drawable_points.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/drawable_triangles.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/drawable_triangles.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/frame.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/frame.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/framebuffer_object.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/framebuffer_object.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/key_frame_interpolator.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/key_frame_interpolator.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/manipulated_camera_frame.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/manipulated_camera_frame.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/manipulated_frame.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/manipulated_frame.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/model.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/model.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/opengl.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/opengl_error.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/opengl_error.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/opengl_info.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/opengl_info.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/opengl_timer.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/opengl_timer.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/primitives.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/primitives.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/read_pixel.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/read_pixel.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/renderer.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/renderer.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/setting.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/setting.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/shader_manager.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/shader_manager.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/shader_program.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/shader_program.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/tessellator.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/tessellator.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/texture.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/texture.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/transform.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/transform.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/transform_decompose.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/transform_decompose.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/vertex_array_object.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/vertex_array_object.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/viewer.cpp">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/viewer.h">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/edl/edl_bilateral_filter.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/edl/edl_bilateral_filter.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/edl/edl_compose.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/edl/edl_compose.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/edl/edl_shade.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/edl/edl_shade.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_cones_color.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_cones_color.geom">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_cones_color.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_cones_texture.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_cones_texture.geom">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_cones_texture.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_cylinders_color.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_cylinders_color.geom">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_cylinders_color.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_cylinders_texture.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_cylinders_texture.geom">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_cylinders_texture.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_plain_color.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_plain_color.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_plain_color_width_control.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_plain_color_width_control.geom">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_plain_color_width_control.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_plain_texture.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_plain_texture.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_plain_texture_width_control.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_plain_texture_width_control.geom">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/lines/lines_plain_texture_width_control.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_plain_color.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_plain_color.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_plain_texture.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_plain_texture.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_spheres_geometry_color.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_spheres_geometry_color.geom">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_spheres_geometry_color.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_spheres_geometry_texture.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_spheres_geometry_texture.geom">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_spheres_geometry_texture.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_spheres_sprite_color.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_spheres_sprite_color.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_surfel_color.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_surfel_color.geom">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_surfel_color.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_surfel_texture.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_surfel_texture.geom">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/points/points_surfel_texture.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/screen_space/screen_space_color.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/screen_space/screen_space_color.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/screen_space/screen_space_depth_texture.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/screen_space/screen_space_depth_texture.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/screen_space/screen_space_texture.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/screen_space/screen_space_texture.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/selection/selection_pointcloud_lasso.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/selection/selection_pointcloud_lasso.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/selection/selection_pointcloud_rect.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/selection/selection_pointcloud_rect.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/selection/selection_single_primitive.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/selection/selection_single_primitive.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/shadow/shadow_generate.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/shadow/shadow_generate.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/shadow/shadow_rendering.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/shadow/shadow_rendering.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/shadow/soft_shadow_generate.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/shadow/soft_shadow_generate.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/shadow/soft_shadow_rendering.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/shadow/soft_shadow_rendering.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/ssao/blur.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/ssao/blur.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/ssao/geometry_pass.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/ssao/geometry_pass.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/ssao/ssao.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/ssao/ssao.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/surface/surface_color.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/surface/surface_color.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/surface/surface_texture.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/surface/surface_texture.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/transparency/average_color_blend.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/transparency/average_color_blend.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/transparency/average_color_init.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/transparency/average_color_init.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/transparency/dual_depth_peeling_blend.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/transparency/dual_depth_peeling_blend.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/transparency/dual_depth_peeling_final.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/transparency/dual_depth_peeling_final.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/transparency/dual_depth_peeling_init.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/transparency/dual_depth_peeling_init.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/transparency/dual_depth_peeling_peel_color.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/transparency/dual_depth_peeling_peel_color.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/transparency/dual_depth_peeling_peel_texture.frag">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/resources/shaders/transparency/dual_depth_peeling_peel_texture.vert">
+			<Option target="easy3d_viewer"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rd_party\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glew/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rd_party\glew\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glog/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rd_party\glog\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rd_party\glfw\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rd_party\glfw\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\3rd_party\glfw\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\3rd_party\glfw\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\3rd_party\glfw\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/Calibration/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Calibration\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\easy3d\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\easy3d\core\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/fileio/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\easy3d\fileio\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/util/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\easy3d\util\"/>
+		</Unit>
+		<Unit filename="C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/easy3d/viewer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\easy3d\viewer\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
