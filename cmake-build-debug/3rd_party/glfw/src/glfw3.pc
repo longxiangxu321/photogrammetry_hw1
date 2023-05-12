@@ -1,7 +1,7 @@
-prefix=C:/Program Files (x86)/A1_Calibration_Code
+prefix=C:/Program Files (x86)/photogrammetry_hw1
 exec_prefix=${prefix}
-includedir=C:/Program Files (x86)/A1_Calibration_Code/include
-libdir=C:/Program Files (x86)/A1_Calibration_Code/lib
+includedir=C:/Program Files (x86)/photogrammetry_hw1/include
+libdir=C:/Program Files (x86)/photogrammetry_hw1/lib
 
 Name: GLFW
 Description: A multi-platform library for OpenGL, window and input

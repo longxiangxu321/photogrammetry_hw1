@@ -6,16 +6,10 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: A1_Calibration_Code
+# Project: photogrammetry_hw1
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
-
-#############################################
-# localized /showIncludes string
-
-msvc_deps_prefix = 注意: 包含文件:  
-
 
 #############################################
 # Rule for running custom commands.
@@ -29,8 +23,9 @@ rule CUSTOM_COMMAND
 # Rule for compiling C files.
 
 rule C_COMPILER__3rd_glew_Debug
-  deps = msvc
-  command = C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  depfile = $DEP_FILE
+  deps = gcc
+  command = "F:\CLion 2022.2.1\bin\mingw\bin\gcc.exe" $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -38,7 +33,7 @@ rule C_COMPILER__3rd_glew_Debug
 # Rule for linking C static library.
 
 rule C_STATIC_LIBRARY_LINKER__3rd_glew_Debug
-  command = cmd.exe /C "$PRE_LINK && C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && "F:\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f $TARGET_FILE && "F:\CLion 2022.2.1\bin\mingw\bin\ar.exe" qc $TARGET_FILE $LINK_FLAGS $in && "F:\CLion 2022.2.1\bin\mingw\bin\ranlib.exe" $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -47,8 +42,9 @@ rule C_STATIC_LIBRARY_LINKER__3rd_glew_Debug
 # Rule for compiling C files.
 
 rule C_COMPILER__3rd_glfw_Debug
-  deps = msvc
-  command = C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  depfile = $DEP_FILE
+  deps = gcc
+  command = "F:\CLion 2022.2.1\bin\mingw\bin\gcc.exe" $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -56,7 +52,7 @@ rule C_COMPILER__3rd_glfw_Debug
 # Rule for linking C static library.
 
 rule C_STATIC_LIBRARY_LINKER__3rd_glfw_Debug
-  command = cmd.exe /C "$PRE_LINK && C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && "F:\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f $TARGET_FILE && "F:\CLion 2022.2.1\bin\mingw\bin\ar.exe" qc $TARGET_FILE $LINK_FLAGS $in && "F:\CLion 2022.2.1\bin\mingw\bin\ranlib.exe" $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -65,8 +61,9 @@ rule C_STATIC_LIBRARY_LINKER__3rd_glfw_Debug
 # Rule for compiling CXX files.
 
 rule CXX_COMPILER__3rd_glog_Debug
-  deps = msvc
-  command = C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  depfile = $DEP_FILE
+  deps = gcc
+  command = "F:\CLion 2022.2.1\bin\mingw\bin\g++.exe" $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -74,7 +71,7 @@ rule CXX_COMPILER__3rd_glog_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__3rd_glog_Debug
-  command = cmd.exe /C "$PRE_LINK && C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && "F:\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f $TARGET_FILE && "F:\CLion 2022.2.1\bin\mingw\bin\ar.exe" qc $TARGET_FILE $LINK_FLAGS $in && "F:\CLion 2022.2.1\bin\mingw\bin\ranlib.exe" $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -83,8 +80,9 @@ rule CXX_STATIC_LIBRARY_LINKER__3rd_glog_Debug
 # Rule for compiling CXX files.
 
 rule CXX_COMPILER__easy3d_core_Debug
-  deps = msvc
-  command = C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  depfile = $DEP_FILE
+  deps = gcc
+  command = "F:\CLion 2022.2.1\bin\mingw\bin\g++.exe" $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -92,7 +90,7 @@ rule CXX_COMPILER__easy3d_core_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__easy3d_core_Debug
-  command = cmd.exe /C "$PRE_LINK && C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && "F:\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f $TARGET_FILE && "F:\CLion 2022.2.1\bin\mingw\bin\ar.exe" qc $TARGET_FILE $LINK_FLAGS $in && "F:\CLion 2022.2.1\bin\mingw\bin\ranlib.exe" $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -101,8 +99,9 @@ rule CXX_STATIC_LIBRARY_LINKER__easy3d_core_Debug
 # Rule for compiling CXX files.
 
 rule CXX_COMPILER__easy3d_fileio_Debug
-  deps = msvc
-  command = C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  depfile = $DEP_FILE
+  deps = gcc
+  command = "F:\CLion 2022.2.1\bin\mingw\bin\g++.exe" $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -110,7 +109,7 @@ rule CXX_COMPILER__easy3d_fileio_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__easy3d_fileio_Debug
-  command = cmd.exe /C "$PRE_LINK && C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && "F:\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f $TARGET_FILE && "F:\CLion 2022.2.1\bin\mingw\bin\ar.exe" qc $TARGET_FILE $LINK_FLAGS $in && "F:\CLion 2022.2.1\bin\mingw\bin\ranlib.exe" $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -119,8 +118,9 @@ rule CXX_STATIC_LIBRARY_LINKER__easy3d_fileio_Debug
 # Rule for compiling CXX files.
 
 rule CXX_COMPILER__easy3d_util_Debug
-  deps = msvc
-  command = C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  depfile = $DEP_FILE
+  deps = gcc
+  command = "F:\CLion 2022.2.1\bin\mingw\bin\g++.exe" $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -128,7 +128,7 @@ rule CXX_COMPILER__easy3d_util_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__easy3d_util_Debug
-  command = cmd.exe /C "$PRE_LINK && C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && "F:\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f $TARGET_FILE && "F:\CLion 2022.2.1\bin\mingw\bin\ar.exe" qc $TARGET_FILE $LINK_FLAGS $in && "F:\CLion 2022.2.1\bin\mingw\bin\ranlib.exe" $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -137,8 +137,9 @@ rule CXX_STATIC_LIBRARY_LINKER__easy3d_util_Debug
 # Rule for compiling CXX files.
 
 rule CXX_COMPILER__easy3d_viewer_Debug
-  deps = msvc
-  command = C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  depfile = $DEP_FILE
+  deps = gcc
+  command = "F:\CLion 2022.2.1\bin\mingw\bin\g++.exe" $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -146,7 +147,7 @@ rule CXX_COMPILER__easy3d_viewer_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__easy3d_viewer_Debug
-  command = cmd.exe /C "$PRE_LINK && C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && "F:\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f $TARGET_FILE && "F:\CLion 2022.2.1\bin\mingw\bin\ar.exe" qc $TARGET_FILE $LINK_FLAGS $in && "F:\CLion 2022.2.1\bin\mingw\bin\ranlib.exe" $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -155,8 +156,9 @@ rule CXX_STATIC_LIBRARY_LINKER__easy3d_viewer_Debug
 # Rule for compiling CXX files.
 
 rule CXX_COMPILER__Calibration_Debug
-  deps = msvc
-  command = C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  depfile = $DEP_FILE
+  deps = gcc
+  command = "F:\CLion 2022.2.1\bin\mingw\bin\g++.exe" $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -164,7 +166,7 @@ rule CXX_COMPILER__Calibration_Debug
 # Rule for linking CXX executable.
 
 rule CXX_EXECUTABLE_LINKER__Calibration_Debug
-  command = cmd.exe /C "$PRE_LINK && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && "F:\CLion 2022.2.1\bin\mingw\bin\g++.exe" $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
@@ -173,7 +175,7 @@ rule CXX_EXECUTABLE_LINKER__Calibration_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\Q4\photogrammetry\assignment1\A1_Calibration\A1_Calibration_Code -BD:\Q4\photogrammetry\assignment1\A1_Calibration\A1_Calibration_Code\cmake-build-debug
+  command = "F:\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\GONGSICONG\CLionProjects\photogrammetry_hw1 -BC:\Users\GONGSICONG\CLionProjects\photogrammetry_hw1\cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
@@ -182,7 +184,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = "C:\Program Files\JetBrains\CLion 2022.2.4\bin\ninja\win\ninja.exe" $FILE_ARG -t clean $TARGETS
+  command = "F:\CLion 2022.2.1\bin\ninja\win\ninja.exe" $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -190,6 +192,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = "C:\Program Files\JetBrains\CLion 2022.2.4\bin\ninja\win\ninja.exe" -t targets
+  command = "F:\CLion 2022.2.1\bin\ninja\win\ninja.exe" -t targets
   description = All primary targets available:
 

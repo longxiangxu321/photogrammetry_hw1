@@ -1,8 +1,8 @@
-# Install script for directory: D:/Q4/photogrammetry/assignment1/A1_Calibration/A1_Calibration_Code/3rd_party/glog
+# Install script for directory: C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/3rd_party/glog
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/A1_Calibration_Code")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/photogrammetry_hw1")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -30,5 +30,10 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "F:/CLion 2022.2.1/bin/mingw/bin/objdump.exe")
 endif()
 

@@ -1,7 +1,7 @@
-"C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.2.4/bin/ninja/win/ninja.exe" -G Ninja -S D:\Q4\photogrammetry\assignment1\A1_Calibration\A1_Calibration_Code -B D:\Q4\photogrammetry\assignment1\A1_Calibration\A1_Calibration_Code\cmake-build-debug
--- Easy3D: I'am working on a 32-bit Windows
+"F:\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=F:/CLion 2022.2.1/bin/ninja/win/ninja.exe" -G Ninja -S C:\Users\GONGSICONG\CLionProjects\photogrammetry_hw1 -B C:\Users\GONGSICONG\CLionProjects\photogrammetry_hw1\cmake-build-debug
+-- Easy3D: I'am working on a 64-bit Windows
 -- OpenGL libraries: opengl32;glu32
 -- Using Win32 for window creation
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/Q4/photogrammetry/assignment1/A1_Calibration/A1_Calibration_Code/cmake-build-debug
+-- Build files have been written to: C:/Users/GONGSICONG/CLionProjects/photogrammetry_hw1/cmake-build-debug
