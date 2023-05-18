@@ -94,13 +94,13 @@ bool Calibration::calibration(
     auto r3 = rho * a3;
     auto r2 = cross(r3, r1) * 1;
 
-    //    double& fx,    /// output: focal length (i.e., K[0][0], which is equal to 'alpha' in our slides).
-    //    double& fy,    /// output: focal length (i.e., K[1][1], which is equal to 'beta/sin(theta)' in our slides).
-    //    double& cx,    /// output: x component of the principal point (i.e., K[0][2], which is 'u0' in our slides).
-    //    double& cy,    /// output: y component of the principal point (i.e., K[1][2], which is 'v0' in our slides).
-    //    double& skew,  /// output: skew factor (i.e., K[0][1], which is equal to '-alpha * cot(theta)' in our slides).
-    //    Matrix33& R,   /// output: the 3x3 rotation matrix encoding camera rotation.
-    //    Vector3D& t)   /// output：a 3D vector encoding camera translation.
+    //  double& fx,    /// output: focal length (i.e., K[0][0], which is equal to 'alpha' in our slides).
+    //  double& fy,    /// output: focal length (i.e., K[1][1], which is equal to 'beta/sin(theta)' in our slides).
+    //  double& cx,    /// output: x component of the principal point (i.e., K[0][2], which is 'u0' in our slides).
+    //  double& cy,    /// output: y component of the principal point (i.e., K[1][2], which is 'v0' in our slides).
+    //  double& skew,  /// output: skew factor (i.e., K[0][1], which is equal to '-alpha * cot(theta)' in our slides).
+    //  Matrix33& R,   /// output: the 3x3 rotation matrix encoding camera rotation.
+    //  Vector3D& t)   /// output：a 3D vector encoding camera translation.
 
     //  Calculate real parameters
     fx = alpha;
@@ -130,15 +130,34 @@ bool Calibration::calibration(
     transform.set_row(2, vv3);
     auto M = mult(K, transform);
 
+    // Output the parameters
+    std::cout << "fx " << fx << std::endl;
+    std::cout << "fy " << fy << std::endl;
+    std::cout << "cx " << cx << std::endl;
+    std::cout << "cy " << cy << std::endl;
+    std::cout << "skew " << skew << std::endl;
+    std::cout << "R " << R << std::endl;
+    std::cout << "t " << t << std::endl;
+
+    // Output the errors
     double MSE_u = 0.0;
     double MSE_v = 0.0;
     for (int i = 0; i < num_of_pairs; i++) {
+        // Output the error of individual points
         auto result = mult(M, points_3d[i].homogeneous());
         auto p_cal = result / result[2];
         auto p_mea = points_2d[i].homogeneous();
-        MSE_u = MSE_u + pow((p_cal[0] - p_mea[0]), 2) / num_of_pairs;
-        MSE_v = MSE_v + pow((p_cal[1] - p_mea[1]), 2) / num_of_pairs;
+        auto SE_u = pow((p_cal[0] - p_mea[0]), 2);
+        auto SE_v = pow((p_cal[1] - p_mea[1]), 2);
+        auto RE_u = sqrt(SE_u);
+        auto RE_v = sqrt(SE_v);
+        auto RE = sqrt(SE_u + SE_v);
+        std::cout << "For Point " << i << ", RE_u = " << RE_u << ", RE_v = " << RE_v << ", RE = " << RE << std::endl;
+        // Cumulative of error of individual points
+        MSE_u = MSE_u + SE_u / num_of_pairs;
+        MSE_v = MSE_v + SE_v / num_of_pairs;
     }
+    // Output the RMSE
     double RMSE_u = sqrt(MSE_u);
     double RMSE_v = sqrt(MSE_v);
     double RMSE = sqrt(MSE_u + MSE_v);
@@ -146,10 +165,13 @@ bool Calibration::calibration(
     std::cout << "RMSE_v " << RMSE_v << std::endl;
     std::cout << "RMSE " << RMSE << std::endl;
 
-    auto result = mult(M, points_3d[5].homogeneous());
-    auto result1 = result / result[2];
-    std::cout << "input 3D " << points_3d[5] << std::endl;
-    std::cout << "result " << result1 << std::endl;
+    // Check input and output for one point
+    auto point_2d_input = points_2d[0];
+    auto point_3d_input = mult(M, points_3d[0].homogeneous());
+    auto point_2d_output = point_3d_input / point_3d_input[2];
+    std::cout << "point_2d_input " << point_2d_input << std::endl;
+    std::cout << "point_3d_input " << point_3d_input << std::endl;
+    std::cout << "point_2d_output " << point_2d_output << std::endl;
 
     return true;
 }
